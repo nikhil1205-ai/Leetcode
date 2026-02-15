@@ -5,7 +5,7 @@ class Solution {
         int a=intervals[0][0],b=intervals[0][1];
         for(int i=1;i<intervals.length;i++){
              if(intervals[i][0]<=b){
-                b=Math.max(b,intervals[i][1]);
+                b=Math.max(intervals[i][1],b);
              }else{
                 arr.add(new int[]{a, b});
                 a=intervals[i][0];
