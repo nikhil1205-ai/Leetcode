@@ -14,7 +14,7 @@
 
 <p><strong>Explanation:</strong></p>
 
-<p>The longest balanced substring is <code>&quot;abba&quot;</code> because both distinct characters <code>&#39;a&#39;</code> and <code>&#39;b&#39;</code> each appear exactly 2 times.</p>
+<p>The longest balanced substring is the number<code>&quot;abba&quot;</code> because both distinct characters <code>&#39;a&#39;</code> and <code>&#39;b&#39;</code> each appear exactly 2 times.</p>
 </div>
 
 <p><strong class="example">Example 2:</strong></p>
