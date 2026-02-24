@@ -10,7 +10,7 @@
 <strong>Output:</strong> [2,4]
 <strong>Explanation:</strong> Number 2 is repeated and number 4 is missing so the answer is [2,4].
 </pre>
-
+my name is Nikhil 
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
