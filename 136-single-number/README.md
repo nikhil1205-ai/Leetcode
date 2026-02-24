@@ -14,7 +14,7 @@
 <p><strong class="example">Example 2:</strong></p>
 
 <div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [4,1,2,1,2]</span></p>
+<p><strong>Input:</strong> <span class="example-io"
 
 <p><strong>Output:</strong> <span class="example-io">4</span></p>
 </div>
