@@ -1,18 +1,25 @@
 class Solution {
     public int[] findMissingAndRepeatedValues(int[][] grid) {
-        HashMap<Integer,Integer> hs= new HashMap<>();
-        int a=0,b=0;
-        for(int i=0;i<grid.length;i++){
-            for(int j=0;j<grid.length;j++){
-                hs.put(grid[i][j],hs.getOrDefault(grid[i][j],0)+1);
+        int n = grid.length;
+        int size = n * n;
+        int[] count = new int[size + 1];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                count[grid[i][j]]++;
             }
         }
-        for(int i=1;i<=grid.length*grid.length;i++){
-            if(!hs.containsKey(i)) b=i;
-            else if(hs.get(i)==2) a=i;
+
+        int a = -1, b = -1;
+
+        for (int num = 1; num <= size; num++) {
+            if (count[num] == 2) {
+                a = num;
+            } else if (count[num] == 0) {
+                b = num;
+            }
         }
-        int arr[]=new int[2];
-        arr[0]=a; arr[1]=b;
-        return arr;
+
+        return new int[]{a, b};
     }
 }
