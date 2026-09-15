@@ -1,9 +1,11 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        int ans = 0;
-        for (int num : nums) {
-            ans ^= num;
-        }
-        return ans;
+        // Initialize the unique number...
+        int uniqNum = 0;
+        // TRaverse all elements through the loop...
+        for (int idx : nums) {
+            // Concept of XOR...
+            uniqNum ^= idx;
+        } return uniqNum;       // Return the unique number...
     }
 }
