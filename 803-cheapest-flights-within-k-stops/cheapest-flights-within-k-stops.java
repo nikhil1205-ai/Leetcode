@@ -18,7 +18,7 @@ class Solution {
         while(!qu.isEmpty()){
             int[] curr= qu.remove();
             if(curr[2]>k) break;
-                for(int[] edge:adj.get(curr[0])){
+            for(int[] edge:adj.get(curr[0])){
                     if(dist[curr[0]]!=Integer.MAX_VALUE){
                         int wt=curr[1]+edge[1];
                         if(wt<dist[edge[0]] && curr[2]<=k){
@@ -30,10 +30,8 @@ class Solution {
             
 
         }
-
+        
         if(dist[dst]==Integer.MAX_VALUE) return -1;
         return dist[dst];
-
-        
     }
 }
